@@ -1,29 +1,62 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(148, 148, 148);
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     transition: background-color 0.5s, background-image 0.5s;
+    padding: 20px;
 }
 
 body.bright {
-    background-color: #d7cf2d;
-    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(253, 251, 211, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+    background-color: #ffe600;
 }
 
 .container {
     text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.interactive-box {
+    text-align: right;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .light-bulb {
     position: relative;
     width: 50px;
     height: 100px;
-    margin: 20px auto;
-    
+    margin: 50px auto;
 }
 
 .gg-bulb {
@@ -46,7 +79,6 @@ body.bright {
     display: block;
     box-sizing: border-box;
     position: absolute;
-   
 }
 
 .gg-bulb::before {
@@ -83,14 +115,14 @@ body.bright {
 }
 
 label {
-    font-size: 20px;
+    font-size: 1.2em;
     margin-right: 10px;
     display: flex;
     align-items: center;
 }
 
 .mic-icon {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-right: 10px;
 }
 

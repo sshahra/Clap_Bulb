@@ -35,7 +35,7 @@ function startListening() {
                 const array = new Uint8Array(analyser.frequencyBinCount);
                 analyser.getByteFrequencyData(array);
                 const values = array.reduce((a, b) => a + b, 0) / array.length;
-                if (values > 75) {
+                if (values > 50) {
                     toggleLight();
                 }
             };
